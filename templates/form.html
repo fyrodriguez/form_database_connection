@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Módulos de software codificados y probados. <br>GA7-220501096-AA2-EV02.</h1>
+        <h1></h1>
+        <p class="parrafo">Formulario de Registro</p>
+    </div>
+
+
+    <form action="/guardar" method="post" class="contenedor_form">
+
+        <div>
+            <label class="label_nombre">Nombres:</label>
+            <input type="text" name="nombres" placeholder="Digite sus nombres" class="nombres" >
+        </div>
+
+        <div>
+            <label class="label_apellido">Apellidos:</label>
+            <input type="text" name="apellidos" placeholder="Digite sus apellidos" class="apellidos">
+        </div>
+
+        <div class="EDAD">
+            <label class="label_edad">Edad:</label>
+            <input type="number" name="edad" placeholder="Cual es su edad" class="edad" >
+        </div>
+
+        <div>
+            <label class="label_telefono">Telefono:</label>
+            <input type="text" name="telefono" placeholder="Número de contacto" class="telefono">
+        </div>
+
+        <div>
+            <label class="label_email">Email:</label>
+            <input type="email" name="email" placeholder="Correo electronico" class="email">
+        </div>
+
+        <div class="button">
+            <button type="submit">Guardar</button>
+        </div>
+        
+
+        
+
+    </form>
+
+    <br><br>
+
+    <footer class="footer">
+
+        <p> © 2026 Formulario</p>
+
+    </footer>
+
+</body>
+</html>
